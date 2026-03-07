@@ -367,80 +367,153 @@
     </section>
 
     <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title teal-text">PMC_GraphRAG — Hybrid Graph-RAG for Biomedical Literature Retrieval</span>
-            <ul>
-              <li>Built a hybrid Graph-RAG retrieval pipeline over 1,000 PMC Open Access articles, processing 88K+ paragraphs into 12.9K evidence chunks.</li>
-              <li>Constructed an explainable knowledge graph with 5.8K UMLS-grounded concepts and 609K provenance-linked evidence rows for multi-hop traversal.</li>
-              <li>Engineered a local-first retrieval system using DuckDB, SciSpaCy, FAISS, and NetworkX, optimizing query-time memory by decoupling heavy UMLS linking from inference.</li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <a href="https://github.com/aarav2703/graph_rag" target="_blank" class="teal-text">View on GitHub</a>
-          </div>
-        </div>
+  <h3 class="page-title white-text teal">Projects</h3>
+  <div class="container">
 
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title teal-text">ChurnXGB — Revenue-Aware Churn Modeling</span>
-            <ul>
-              <li>Built XGBoost churn models with SHAP-based interpretability for customer risk segmentation</li>
-              <li>Implemented value-at-risk scoring to prioritize high-impact churn cases</li>
-              <li>Evaluated temporal generalization using holdout-based validation</li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <a href="https://github.com/aarav2703/churn_XGB" target="_blank" class="teal-text">View on GitHub</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title teal-text">AutoParse — Deep Learning Receipt Understanding</span>
-            <ul>
-              <li>Developed OCR + deep learning pipeline for parsing unstructured receipt images</li>
-              <li>Used neural model outputs with LLM-based post-processing to generate structured fields</li>
-              <li>Reduced manual data entry through automated extraction workflows</li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <a href="https://github.com/aarav2703/Smart-Bill-Split" target="_blank" class="teal-text">View on GitHub</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title teal-text">RAGcite — Research Collaboration Discovery</span>
-            <ul>
-              <li>Designed a retrieval-augmented generation (RAG) system for academic collaborator discovery</li>
-              <li>Used embedding-based semantic search over publication metadata</li>
-              <li>Automated cold-email generation using LLM APIs</li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <a href="https://github.com/aarav2703/RAGcite" target="_blank" class="teal-text">View on GitHub</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title teal-text">Hospital Forecast — Hybrid Time-Series & ML Modeling</span>
-            <ul>
-              <li>Built LightGBM and statistical forecasting models for hospital-level outcome prediction</li>
-              <li>Handled heterogeneous data distributions across institutions</li>
-              <li>Used SHAP diagnostics to analyze feature stability across sites</li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <a href="https://github.com/aarav2703/Hybrid-Hospital-Forecasting" target="_blank" class="teal-text">View on GitHub</a>
-          </div>
-        </div>
+    <!-- Distributed Product Analytics -->
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title teal-text">
+          Distributed Product Analytics & Experimentation Platform
+        </span>
+        <ul>
+          <li>
+            Built a distributed analytics pipeline over <b>67M+ e-commerce events</b> using
+            <b>PySpark bronze/silver/gold lakehouse layers</b>, producing session-level fact tables
+            and partitioned Parquet datasets.
+          </li>
+          <li>
+            Modeled product analytics marts in <b>DuckDB + SQL</b> including
+            session funnels, cohort retention, and product engagement metrics.
+          </li>
+          <li>
+            Implemented experimentation analysis including
+            <b>lift estimation, 95% confidence intervals, and sample-ratio-mismatch (SRM) checks</b>.
+          </li>
+        </ul>
       </div>
-    </section>
+      <div class="card-action">
+        <a href="https://github.com/aarav2703/distri_pyspark" target="_blank" class="teal-text">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+
+    <!-- ChurnXGB -->
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title teal-text">
+          ChurnXGB — Revenue-Optimized Retention Modeling
+        </span>
+        <ul>
+          <li>
+            Built a <b>leakage-safe churn ranking pipeline</b> using
+            point-in-time customer-month features and <b>XGBoost</b>
+            under fixed outreach budgets.
+          </li>
+          <li>
+            Optimized targeting using <b>Value-at-Risk scoring</b>, capturing
+            <b>57% more protected revenue</b> at a 10% contact budget vs RFM heuristics.
+          </li>
+          <li>
+            Implemented an ML lifecycle with <b>MLflow experiment tracking, dataset hashing,
+            run promotion, and PSI-based drift monitoring</b>.
+          </li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <a href="https://github.com/aarav2703/churnXGB_prod" target="_blank" class="teal-text">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+
+    <!-- GraphRAG -->
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title teal-text">
+          PMC_GraphRAG — Hybrid Graph-RAG for Biomedical Literature Retrieval
+        </span>
+        <ul>
+          <li>
+            Built a hybrid retrieval system over <b>1,000+ PMC Open Access articles</b>,
+            converting <b>88K paragraphs into 12.9K evidence chunks</b>.
+          </li>
+          <li>
+            Constructed a <b>UMLS-grounded knowledge graph</b> with
+            <b>5.8K biomedical concepts and 609K provenance-linked edges</b>.
+          </li>
+          <li>
+            Combined <b>NetworkX graph traversal with FAISS vector search</b>,
+            enabling multi-hop evidence retrieval with citation-level provenance.
+          </li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <a href="https://github.com/aarav2703/graph_rag" target="_blank" class="teal-text">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+
+    <!-- AutoParse -->
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title teal-text">
+          AutoParse — Deep Learning Receipt Understanding
+        </span>
+        <ul>
+          <li>
+            Built a multi-stage OCR pipeline using <b>CRAFT text detection,
+            TrOCR recognition, and LLM-based structuring</b>.
+          </li>
+          <li>
+            Achieved <b>95% structured field coverage</b> across diverse receipt layouts.
+          </li>
+          <li>
+            Benchmarked inference pipeline enabling <b>120+ receipts/min GPU throughput</b>.
+          </li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <a href="https://github.com/aarav2703/Smart-Bill-Split" target="_blank" class="teal-text">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+  <!-- Hospital Forecast -->
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title teal-text">
+          Hospital Forecast — Hybrid Time-Series & ML Modeling
+        </span>
+        <ul>
+          <li>
+            Built a hybrid forecasting pipeline combining LightGBM for stable facilities and ETS statistical models for high-volatility sites across heterogeneous hospital systems.
+          </li>
+          <li>
+            Modeled outcome trends across 1,000+ bed-capacity scales and analyzed model behavior using SHAP interpretability.
+          </li>
+          <li>
+            Reduced extreme forecast error by mitigating 8× RMSE spikes and improving prediction accuracy 30–40% over single-model baselines.
+          </li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <a href="https://github.com/aarav2703/Hybrid-Hospital-Forecasting" target="_blank" class="teal-text">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
 
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
