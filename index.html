@@ -366,9 +366,40 @@
       </div>
     </section>
 
-    <section id="projects" class="section scrollspy">
+<section id="projects" class="section scrollspy">
   <h3 class="page-title white-text teal">Projects</h3>
   <div class="container">
+
+    <!-- Autonomous Multi-hop Research Agent -->
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title teal-text">
+          Autonomous Multi-hop Research Agent (HotpotQA RAG System)
+        </span>
+        <ul>
+          <li>
+            Built an end-to-end multi-hop QA system with dense + hybrid retrieval (FAISS + BM25) over large-scale corpus.
+          </li>
+          <li>
+            Designed LangGraph pipeline (retrieval → evidence selection → grounded generation) with fail-closed answering.
+          </li>
+          <li>
+            Implemented sentence-level evidence ranking and evaluation (EM/F1, precision/recall).
+          </li>
+          <li>
+            Developed FastAPI backend and React dashboard for answer + reasoning + retrieval trace visualization.
+          </li>
+          <li>
+            Built reproducible pipeline with parquet data, FAISS indexing, and A/B evaluation across retrieval modes.
+          </li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <a href="https://github.com/aarav2703/Autonomous-Research/tree/main" target="_blank" class="teal-text">
+          View on GitHub
+        </a>
+      </div>
+    </div>
 
     <!-- PaperMind -->
     <div class="card">
