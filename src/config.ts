@@ -11,7 +11,7 @@ export const siteConfig = {
   resumeUrl: "/resume/Aarav_Kalkar_Resume.pdf",
   twitterHandle: "@aaravkalkar",
   social: {
-    email: "kalka046@umn.edu",
+    email: "aarav.k.data@gmail.com",
     linkedin: "https://www.linkedin.com/in/aaravkalkar/",
     github: "https://github.com/aarav2703/",
   },
@@ -50,11 +50,11 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "Autonomous Multi-hop Research Agent",
+      name: "RAG Evidence Lab: Comparative RAG Diagnostics",
       description:
-        "Built an end-to-end HotpotQA system over 90K+ queries using FAISS + BM25 hybrid retrieval, a LangGraph evidence pipeline, grounded generation, citation validation, and an interpretability dashboard for workflow tracing.",
+        "Built a full-stack RAG diagnostics lab comparing 8 retrieval strategies: vector, BM25, hybrid, rerank, GraphRAG-lite, vectorless, agentic, and multi-hop, on shared PDF corpora with evidence visualizations. Added HotpotQA benchmarking over 150 validation questions and 1,200 query-mode runs, reporting NDCG, Recall, MRR, MAP, and supporting-fact hit rate through a method-level comparison dashboard.",
       link: "https://github.com/aarav2703/Autonomous-Research/tree/main",
-      skills: ["LangGraph", "FAISS", "BM25", "React", "FastAPI"],
+      skills: ["RAG", "FAISS", "BM25", "Flask", "React", "D3"],
     },
     {
       name: "Taxi Demand Forecasting",
@@ -64,11 +64,11 @@ export const siteConfig = {
       skills: ["XGBoost", "Time Series", "PySpark", "React", "D3.js"],
     },
     {
-      name: "ChurnXGB",
+      name: "RetentionIQ: Churn Targeting & Next-Best-Action Engine",
       description:
-        "Created a leakage-safe retention modeling system with calibrated churn models, budget-aware targeting policies, drift monitoring, backtesting, and a FastAPI + React decision dashboard.",
+        "Built a churn targeting system across customer-month snapshots using calibrated probabilities, value-at-risk targeting, and budget-aware intervention policies to prioritize high-value retention. Compared XGBoost, Random Forest, and LogReg against RFM baselines; achieved 85.7% Precision@10% on Kaggle, with SHAP explanations, bootstrap CIs, budget simulation, and React dashboard.",
       link: "https://github.com/aarav2703/churnXGB_prod",
-      skills: ["LightGBM", "XGBoost", "FastAPI", "React", "MLOps"],
+      skills: ["XGBoost", "SHAP", "React", "scikit-learn"],
     },
     {
       name: "PaperMind",
