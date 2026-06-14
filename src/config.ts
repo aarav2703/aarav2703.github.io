@@ -50,11 +50,11 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "RAG Evidence Lab: Comparative RAG Diagnostics",
+      name: "RetentionIQ: Churn Targeting & Next-Best-Action Engine",
       description:
-        "Built a full-stack RAG diagnostics lab comparing 8 retrieval strategies: vector, BM25, hybrid, rerank, GraphRAG-lite, vectorless, agentic, and multi-hop, on shared PDF corpora with evidence visualizations. Added HotpotQA benchmarking over 150 validation questions and 1,200 query-mode runs, reporting NDCG, Recall, MRR, MAP, and supporting-fact hit rate through a method-level comparison dashboard.",
-      link: "https://github.com/aarav2703/Autonomous-Research/tree/main",
-      skills: ["RAG", "FAISS", "BM25", "Flask", "React", "D3"],
+        "Built a churn targeting system across customer-month snapshots using calibrated probabilities, value-at-risk targeting, and budget-aware intervention policies to prioritize high-value retention. Compared XGBoost, Random Forest, and LogReg against RFM baselines; achieved 85.7% Precision@10% on Kaggle, with SHAP explanations, bootstrap CIs, budget simulation, and React dashboard.",
+      link: "https://github.com/aarav2703/churnXGB_prod",
+      skills: ["XGBoost", "SHAP", "React", "scikit-learn"],
     },
     {
       name: "Taxi Demand Forecasting",
@@ -64,12 +64,28 @@ export const siteConfig = {
       skills: ["XGBoost", "Time Series", "PySpark", "React", "D3.js"],
     },
     {
-      name: "RetentionIQ: Churn Targeting & Next-Best-Action Engine",
+      name: "RAG Evidence Lab: Comparative RAG Diagnostics",
       description:
-        "Built a churn targeting system across customer-month snapshots using calibrated probabilities, value-at-risk targeting, and budget-aware intervention policies to prioritize high-value retention. Compared XGBoost, Random Forest, and LogReg against RFM baselines; achieved 85.7% Precision@10% on Kaggle, with SHAP explanations, bootstrap CIs, budget simulation, and React dashboard.",
-      link: "https://github.com/aarav2703/churnXGB_prod",
-      skills: ["XGBoost", "SHAP", "React", "scikit-learn"],
+        "Built a full-stack RAG diagnostics lab comparing 8 retrieval strategies: vector, BM25, hybrid, rerank, GraphRAG-lite, vectorless, agentic, and multi-hop, on shared PDF corpora with evidence visualizations. Added HotpotQA benchmarking over 150 validation questions and 1,200 query-mode runs, reporting NDCG, Recall, MRR, MAP, and supporting-fact hit rate through a method-level comparison dashboard.",
+      link: "https://github.com/aarav2703/Autonomous-Research/tree/main",
+      skills: ["RAG", "FAISS", "BM25", "Flask", "React", "D3"],
     },
+    {
+      name: "California Data Viz Story",
+      description:
+        "Built a team project for a Data Visualization course: an end-to-end wildfire analysis and visualization platform studying how environmental, geographic, and social factors relate to California wildfire patterns. Led Python data ingestion, cleaning, and feature construction across multi-source geospatial and temporal datasets, then helped design interactive Svelte and D3 maps and temporal views for exploratory analysis and data-driven storytelling.",
+      link: "https://dipan99.github.io/cali-data-viz2/story",
+      skills: ["Svelte", "D3.js", "Python", "Geospatial Analysis"],
+    },
+    {
+      name: "AutoParse",
+      description:
+        "Designed a multi-stage receipt understanding pipeline using CRAFT detection, TrOCR recognition, and LLM-based structuring, reaching 95% structured field coverage with high-throughput inference.",
+      link: "https://github.com/aarav2703/Smart-Bill-Split",
+      skills: ["OCR", "TrOCR", "LLMs", "Computer Vision"],
+    },
+  ],
+  olderProjects: [
     {
       name: "PaperMind",
       description:
@@ -90,13 +106,6 @@ export const siteConfig = {
         "Built a biomedical retrieval system over 1,000+ PMC articles by combining a UMLS-grounded knowledge graph with FAISS search for multi-hop evidence retrieval and citation-level provenance.",
       link: "https://github.com/aarav2703/graph_rag",
       skills: ["GraphRAG", "UMLS", "FAISS", "NetworkX", "Biomedical NLP"],
-    },
-    {
-      name: "AutoParse",
-      description:
-        "Designed a multi-stage receipt understanding pipeline using CRAFT detection, TrOCR recognition, and LLM-based structuring, reaching 95% structured field coverage with high-throughput inference.",
-      link: "https://github.com/aarav2703/Smart-Bill-Split",
-      skills: ["OCR", "TrOCR", "LLMs", "Computer Vision"],
     },
     {
       name: "RAGcite",
@@ -149,9 +158,9 @@ export const siteConfig = {
     {
       school: "University of Minnesota",
       degree: "Master of Science in Data Science",
-      dateRange: "2024 - Present",
+      dateRange: "2024 - May 2026",
       achievements: [
-        "Currently pursuing the degree in Minneapolis-St. Paul, Minnesota.",
+        "Graduated in May 2026 with a GPA of 3.75 / 4.00.",
         "Focused on applied machine learning, statistical modeling, and large-scale data analysis.",
       ],
     },
